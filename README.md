@@ -32,7 +32,7 @@ Run `npm start` to launch the live terminal dashboard.
 ## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/your-username/seedphrase-scout.git
+git https://github.com/Itszeeshanrajput/SeedphraseScou.git
 cd seedphrase-scout
 npm install
 npm start
@@ -97,4 +97,4 @@ Licensed under the [MIT License](./LICENSE).
 
 ---
 
-Built for modern blockchain education in **2026**.
+Built for modern blockchain research  **itszeeshanrajput**.
