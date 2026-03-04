@@ -1,109 +1,100 @@
-# 🚀 SeedphraseScout 2026
+# SeedphraseScout — Professional Blockchain Research Console (2026 Edition) 🔐
 
-**The Ultimate Blockchain Security Research & Education Engine**
+> **SeedphraseScout** is an educational blockchain security research engine that demonstrates why brute-forcing seed phrases is computationally infeasible.
 
-![Version](https://img.shields.io/badge/version-3.1.0-blue?style=for-the-badge)
-![Node](https://img.shields.io/badge/node-%3E%3D20-green?style=for-the-badge)
-![License](https://img.shields.io/badge/license-MIT-purple?style=for-the-badge)
-![Chains](https://img.shields.io/badge/chains-10+-orange?style=for-the-badge)
+[![Version](https://img.shields.io/badge/version-3.1.0-2563eb?style=for-the-badge)](./package.json)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D20-16a34a?style=for-the-badge)](https://nodejs.org/)
+[![License](https://img.shields.io/badge/license-MIT-7c3aed?style=for-the-badge)](./LICENSE)
+[![Status](https://img.shields.io/badge/status-actively_maintained-f59e0b?style=for-the-badge)](#)
+
+**#SeedphraseScout #BlockchainSecurity #Web3Research #2026Ready**
 
 ---
 
-## 🎨 Professional Dashboard
+## 📸 Dashboard Preview
 
 ![Dashboard Screenshot](./assets/dashboard.png)
-*(Run `npm start` to see the live real-time dashboard)*
+
+Run `npm start` to launch the live terminal dashboard.
 
 ---
 
-## 🌟 Why SeedphraseScout?
+## ✨ Why this project stands out
 
-SeedphraseScout is a professional-grade research tool designed to demonstrate the **mathematical impossibility** of guessing seed phrases while teaching **modern blockchain engineering**. It's built for 2026 performance standards.
-
-### 💎 Key Features
-*   **⚡ Hyper-Speed Generation:** Parallel processing using Node.js `worker_threads`.
-*   **🌍 Multi-Chain Support:** Ethereum, Base, Arbitrum, Optimism, Polygon, Scroll, and more.
-*   **📡 Smart RPC Registry:** Automated rotation of 25+ free public RPC endpoints.
-*   **🔍 Precision Scanning:** Uses `Multicall3` to check ETH + USDT + USDC in a single request.
-*   **📊 Live Dashboard:** Real-time stats, speed tracking, and network health.
+- **Research-first architecture** focused on educational blockchain analysis.
+- **High-throughput worker model** using Node.js `worker_threads`.
+- **Multi-chain wallet derivation and checks** across major EVM networks.
+- **RPC resilience layer** with rotation/fallback behavior.
+- **Clear separation of concerns** (`core`, `rpc`, `ui`, `utils`) for maintainability.
 
 ---
 
-## 🛠️ Beginner's Quick Start
+## 🚀 Quick Start
 
-Follow these 3 simple steps to get started:
-
-### 1. Installation
 ```bash
-# Clone the repository
 git clone https://github.com/your-username/seedphrase-scout.git
-
-# Enter the folder
 cd seedphrase-scout
-
-# Install required packages
 npm install
+npm start
 ```
 
-### 2. Configuration (Optional)
-Copy the example environment file to create your own settings:
+### Optional environment setup
+
 ```bash
 cp .env.example .env
 ```
 
-### 3. Launch the Engine
-```bash
-# Start the professional dashboard
-npm start
+---
+
+## 🧭 Command Reference
+
+| Command | Purpose |
+|---|---|
+| `npm start` | Start the engine and live dashboard |
+| `npm test` | Run diagnostics mode |
+| `npm run lint` | Run ESLint checks |
+
+---
+
+## 🏗️ Architecture at a glance
+
+```text
+src/
+├── core/   -> engine, checker, workers
+├── rpc/    -> endpoint management + health/recovery
+├── ui/     -> terminal dashboard
+└── utils/  -> constants and shared config
 ```
 
 ---
 
-## 📋 Commands Reference
+## 🔐 Educational & Ethical Notice
 
-| Command | Description |
-|---------|-------------|
-| `npm start` | Run the main research engine & dashboard |
-| `npm test` | Run system diagnostics (Checks RPC health) |
-| `npm run lint` | Check code for errors/formatting |
+This repository exists for **security education and engineering research**.
 
----
-
-## 🏗️ Technical Architecture
-
-SeedphraseScout is built with a **Clean Architecture** approach:
-
-*   **`src/core/`**: The core engine logic and cryptographic wallet generation.
-*   **`src/rpc/`**: Advanced connection pooling and error-recovery for blockchain nodes.
-*   **`src/ui/`**: A high-performance Terminal User Interface (TUI).
-*   **`src/utils/`**: Centralized configuration and chain constants.
+- Seed phrase search space is astronomically large (`2^128` scale).
+- Practical brute-force recovery of random wallets is not feasible.
+- Do **not** use this software for unlawful or malicious activity.
 
 ---
 
-## ⚠️ Important Disclaimer
+## 🗺️ 2026 Professionalization Focus
 
-### **For Educational Use Only**
-This tool is a **mathematical demonstration**. Finding a wallet with a balance is statistically impossible. 
-*   **Search Space:** $2^{128}$ possibilities (More than atoms in the universe).
-*   **Purpose:** To learn about BIP-39, BIP-44, JSON-RPC, and Parallel Processing.
-
-**Do not use this tool for any illegal or malicious activity. Use it to LEARN.**
+- Stronger repository metadata and discoverability
+- Better onboarding and contributor UX
+- Cleaner public documentation and positioning
+- Consistent branding for open-source presentation
 
 ---
 
-## 🤝 Contributing & Support
+## 🤝 Contributing
 
-We love contributors! If you want to add a new chain or improve the UI:
-1.  Fork the repo.
-2.  Make your changes.
-3.  Submit a Pull Request.
-
----
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a PR.
 
 ## 📄 License
 
-This project is licensed under the **MIT License**. Free for research and education.
+Licensed under the [MIT License](./LICENSE).
 
 ---
 
-**Built with ❤️ for the Blockchain Community in 2026.**
+Built for modern blockchain education in **2026**.

@@ -2,7 +2,7 @@
   "name": "seedphrase-scout",
   "version": "3.1.0",
   "type": "module",
-  "description": "Professional Blockchain Research Tool - Educational Edition",
+  "description": "Professional 2026-ready blockchain security research console for educational seed phrase analysis",
   "main": "index.js",
   "bin": {
     "seedphrase-scout": "./index.js"
@@ -18,9 +18,15 @@
     "research",
     "educational",
     "viem",
-    "ethers"
+    "ethers",
+    "seedphrase",
+    "seed phrase",
+    "wallet security",
+    "web3 security",
+    "2026",
+    "open-source"
   ],
-  "author": "",
+  "author": "SeedphraseScout Contributors",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.4.5",
