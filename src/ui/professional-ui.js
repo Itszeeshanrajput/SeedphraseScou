@@ -52,12 +52,12 @@ export class ProfessionalUI {
         const speed = parseFloat(this.stats.speed).toFixed(1);
         const timeFormatted = this.formatTime(parseFloat(elapsed));
 
-        // Clear screen
-        console.clear();
+        // Clear screen using ANSI terminal escape sequences to prevent screen flickering
+        process.stdout.write('\x1Bc');
 
         // Header
         console.log();
-        console.log('  ' + txt(c.bold, 'ETH BRUTE FORCE 2026') + txt(c.gray, '  •  ') + txt(c.primary, 'HYPER-GROWTH EDITION'));
+        console.log('  ' + txt(c.bold, 'SEEDPHRASE SCOUT 2026') + txt(c.gray, '  •  ') + txt(c.primary, 'RESEARCH CONSOLE'));
         console.log('  ' + txt(c.gray, '─'.repeat(60)));
         console.log();
 
@@ -79,6 +79,7 @@ export class ProfessionalUI {
         // Legend
         console.log('  ' + txt(c.dim, 'Precision Scan: ETH + USDT + USDC (Multi-Index Derivation 0,1,2)'));
         console.log('  ' + txt(c.dim, 'L2 Priority Enabled: Base, Arbitrum, Optimism, Polygon...'));
+        console.log('  ' + txt(c.dim, 'Secure State: Auto-recovers progress.json & logs to cracked.json'));
         console.log('  ' + txt(c.gray, 'Press Ctrl+C to safely stop and save progress.json'));
         console.log();
     }

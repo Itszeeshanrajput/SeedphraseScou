@@ -24,7 +24,7 @@ parentPort.on('message', async (data) => {
                     index: idx
                 });
             });
-        } catch (e) {
+        } catch (_error) {
             // Silently fail on generation errors to keep speed up
         }
     }
