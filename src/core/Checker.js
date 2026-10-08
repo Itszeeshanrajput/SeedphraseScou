@@ -58,7 +58,7 @@ export class Checker {
                 });
 
                 return hits;
-            } catch (e) {
+            } catch (_error) {
                 this.rpcManager.rotateRPC(net.name);
                 return [];
             }

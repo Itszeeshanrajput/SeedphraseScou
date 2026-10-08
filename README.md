@@ -72,9 +72,12 @@ src/
 
 This repository exists for **security education and engineering research**.
 
-- Seed phrase search space is astronomically large (`2^128` scale).
-- Practical brute-force recovery of random wallets is not feasible.
-- Do **not** use this software for unlawful or malicious activity.
+- **Search Space Scale**: BIP-39 12-word seed phrases represent an entropy space of $2^{128}$ possible combinations (approximately $3.4 \times 10^{38}$ distinct wallets).
+- **Mathematical Impossibility**: To put this in perspective:
+  - If a supercomputer could verify **one trillion** ($10^{12}$) keys per second, it would still take approximately **$10^{19}$ years** to scan the entire 12-word space.
+  - The age of the universe is only $1.38 \times 10^{10}$ years.
+  - Brute-forcing random seed phrases on modern or hypothetical hardware is completely impossible.
+- Do **not** use this software for unlawful or malicious activity. This tool is built purely to provide an interactive visualization and metrics explaining the scale of this cryptographic barrier.
 
 ---
 

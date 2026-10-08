@@ -34,7 +34,7 @@ export class Engine {
             const progress = JSON.parse(data);
             this.stats.total = progress.totalChecked || 0;
             this.stats.found = progress.foundCount || 0;
-        } catch (e) {
+        } catch (_error) {
             // No progress file, start fresh
         }
 
@@ -93,7 +93,7 @@ export class Engine {
                     }));
                 }
 
-            } catch (e) {
+            } catch (_error) {
                 // Prevent tight loop on error
                 await new Promise(r => setTimeout(r, 1000));
             }
@@ -108,7 +108,7 @@ export class Engine {
             try {
                 const block = await client.getBlockNumber();
                 console.log(`  ✅ ${net.name.padEnd(12)}: Block ${block}`);
-            } catch (e) {
+            } catch (_error) {
                 console.log(`  ❌ ${net.name.padEnd(12)}: Failed`);
             }
         }
@@ -118,10 +118,10 @@ export class Engine {
     async saveHit(wallet) {
         try {
             let data = {};
-            try { data = JSON.parse(await fs.readFile('./cracked.json', 'utf8')); } catch (e) {}
+            try { data = JSON.parse(await fs.readFile('./cracked.json', 'utf8')); } catch (_error) {}
             data[wallet.address] = { ...wallet, foundAt: new Date().toISOString() };
             await fs.writeFile('./cracked.json', JSON.stringify(data, null, 2));
-        } catch (e) {}
+        } catch (_error) {}
     }
 
     async shutdown() {
